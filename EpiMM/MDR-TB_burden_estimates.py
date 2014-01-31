@@ -54,9 +54,3 @@ print (df['e_new_mdr_num'].plot[year])
 
 
 
-import sys, os, os.path
-full_path = os.path.realpath(__file__)
-dirpath, prog_file = os.path.split(full_path)
-sys.path.append(dirpath) # AutoPATH for /genedoc-hub/src/dataload
-DATA_ARCHIVE_ROOT = os.path.join(dirpath, 'dataload/data_dump')
-#/home/mom/anaconda/envs/epidemiology/epydemitb/tbm/MDR-TB_burden_estimates.py
