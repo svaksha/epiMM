@@ -46,11 +46,10 @@ df = pd.read_csv(open(filecsv), index_col=[0]) #, 'sheet1', header=None)# )
 #df1 = (df.values)
 #print (df[:15])
 print (df.describe())
-print (df.quantile(), df.var())
+print (df.quantile()
+print (df.var())
 print (df.columns)
 print (df.values)
+print (df.std())
 print (df['e_new_mdr_num'].hist())
 print (df['e_new_mdr_num'].plot[year])
-
-
-
