@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Oct 9 12:29:03 2013
+@author: SVAKSHA
+"""
+
+# use glob syntax.
+syntax: glob
+
+*.elc
+*.pyc
+*~
+
+# Logs, dvcs and databases
+*.log
+*.sql
+*.sqlite
+*.git/
