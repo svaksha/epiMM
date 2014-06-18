@@ -4,17 +4,28 @@ Created on Wed Oct 9 12:29:03 2013
 @author: @svaksha
 """
 
+# Ignore IPython
+notebooks/.ipynb_checkpoints/*
+
+# Ignore excess python files
+*.py[cod]
+
+# Ignore the data folder
+**/datum
+datum/
+datum/**
+log/
+
 # C extensions
 *.so
 
 # Packages
 __pycache__
+*.egg
+*.egg-info
 *.pyc
 *.pyo
 *.swp
-*.egg
-*.egg-info
-*.py[co]
 .installed.cfg
 bin
 build
@@ -45,12 +56,12 @@ nosetests.xml
 *.sqlite
 *.hg/
 
-
 # Mr Developer
 .mr.developer.cfg
+.project
+.pydevproject
 
-
-# OS generated files
+# OSX
 .DS_Store
 .DS_Store?
 ._*
@@ -58,3 +69,10 @@ nosetests.xml
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Vi
+*.swp
+
+# General
+tags
+MANIFEST

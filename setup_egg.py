@@ -11,7 +11,7 @@ LICENSE: AGPLv3 License <http://www.gnu.org/licenses/agpl.html>.
 __author__ = 'SVAKSHA'
 __copyright__ = 'Copyright (c) 2013-Now, SVAKSHA'
 __license__ = 'AGPLv3'
-__version__ = "14.02.dev"
+__version__ = "14.03.dev"
 
 
 from setuptools import setup

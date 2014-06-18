@@ -11,7 +11,7 @@ LICENSE: AGPLv3 License <http://www.gnu.org/licenses/agpl.html>.
 __author__ = 'SVAKSHA'
 __copyright__ = 'Copyright (c) 2013-Now, SVAKSHA'
 __license__ = 'AGPLv3'
-__version__ = "14.02.dev"
+__version__ = "14.03.dev"
 
 from distutils.core import setup
 #from setuptools import setup, find_packages
@@ -21,7 +21,7 @@ import warnings
 import epiMM
 
 def read():
-    with open('README.mediawiki') as f:
+    with open('README.rst') as f:
         return f.readfile()
 
 PKGNAME='epiMM',
@@ -37,12 +37,12 @@ PACKAGES=['epiMM',
           'epiMM.EpiMM',
           'epiMM.test', 
           ],   
-PACKAGE_DATA={'epiMM':['LICENSE.mediawiki',
-                           'README.mediawiki'],
+PACKAGE_DATA={'epiMM':['LICENSE.rst',
+                       'README.rst'],
               'epiMM.datum': ['who/2013-06-24/*.csv',
-                                  'who/2013-09-11/*.csv',
-                                  'who/2014-01-16/*.csv',
-                                  ],
+                              'who/2013-09-11/*.csv',
+                              'who/2014-01-16/*.csv',
+                              ],
               'epiMM.EpiMM': ['/*.py']
               },
 CLASSIFIERS=['Development Status :: 14.01 - Alpha',
@@ -72,4 +72,3 @@ setup(name=PKGNAME,
                           'scidb-py==0.2', 'scipy==0.13.0', 'tornado==3.1',
                           ],
       )
-
